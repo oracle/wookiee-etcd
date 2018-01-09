@@ -1,8 +1,8 @@
 # Wookiee - Component: Etcd
 
-[![Build Status](https://travis-ci.org/Webtrends/wookiee-etcd.svg?branch=master)](https://travis-ci.org/Webtrends/wookiee-etcd) [![Coverage Status](https://coveralls.io/repos/Webtrends/wookiee-etcd/badge.svg?branch=master&service=github)](https://coveralls.io/github/Webtrends/wookiee-etcd?branch=master) [![Latest Release](https://img.shields.io/github/release/webtrends/wookiee-etcd.svg)](https://github.com/Webtrends/wookiee-etcd/releases) [![License](http://img.shields.io/:license-Apache%202-red.svg)](http://www.apache.org/licenses/LICENSE-2.0.txt)
+[![Build Status](https://travis-ci.org/oracle/wookiee-etcd.svg?branch=master)](https://travis-ci.org/oracle/wookiee-etcd) [![Coverage Status](https://coveralls.io/repos/Webtrends/wookiee-etcd/badge.svg?branch=master&service=github)](https://coveralls.io/github/oracle/wookiee-etcd?branch=master) [![Latest Release](https://img.shields.io/github/release/oracle/wookiee-etcd.svg)](https://github.com/oracle/wookiee-etcd/releases) [![License](http://img.shields.io/:license-Apache%202-red.svg)](http://www.apache.org/licenses/LICENSE-2.0.txt)
 
-[Main Wookiee Project](https://github.com/Webtrends/wookiee)
+[Main Wookiee Project](https://github.com/oracle/wookiee)
 
 For Configuration information see [Etcd Config](docs/config.md)
 
