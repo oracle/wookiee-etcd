@@ -12,13 +12,6 @@ addons:
 
 sudo: false
 
-matrix:
-  include:
-    - scala: '2.12.10'
-      env: SCALAVER=2.12
-    - scala: '2.13.1'
-      env: SCALAVER=2.13
-
 cache:
   directories:
     - $HOME/.m2
@@ -34,19 +27,17 @@ script:
       if [ "$TRAVIS_TAG" != "" ]; then
         sbt ++ciBuild
       else
-#        VERS=`mvn org.apache.maven.plugins:maven-help-plugin:3.1.0:evaluate -Dexpression=project.version | sed -n -e '/^\[.*\]/ !{ /^[0-9]/ { p; q } }' | sed "s/SNAPSHOT/$TRAVIS_BRANCH-SNAPSHOT/"`
         export CI_RELEASE="$TRAVIS_TAG"
 
         echo "Version:"
         echo "$VERS"
-#        mvn versions:set -DnewVersion="$VERS"
       fi
 
-      mvn deploy --settings target/travis/settings.xml
+      sbt ++ciBuild
     fi
   - |
     if [ "${TRAVIS_PULL_REQUEST}" != "false" ]; then
-      mvn test -B
+      sbt ++ciBuild
     fi
 
 env:
